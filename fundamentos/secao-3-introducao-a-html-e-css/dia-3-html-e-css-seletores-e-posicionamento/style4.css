@@ -1,0 +1,65 @@
+/* Para este exercício, você não deve atribuir nenhuma classe ou id aos componentes, mas apenas utilizar pseudo-classes para individualizar cada elemento! */
+
+div:hover {
+    border: 2px black solid; 
+    /* ATENÇÃO: NÃO colocar vírgula entre os parâmetros! */
+}
+
+/* PARA ATRIBUIR CARACTERÍSTICAS ÚNICAS ATRAVÉS DAS SUBCLASSES, USAR 
+:nth-of-type(número) { o-que-será-mudado }, onde número é a ocorrência do elemento;
+É possível usar a notação AnB, onde A é "a cada" -ex, a cada 6 elementos... e B é o ponto de partida: a partir do B elemento. Por exemplo, 4n6 seleciona os elementos de 4 em 4, partindo do 6º elemento. Ainda, pode-se usar odd (ímpar) e even (par) */
+
+div:nth-of-type(1) {
+    background-color: red
+}
+div:nth-of-type(2) {
+    background-color: purple
+}
+div:nth-of-type(3) {
+    background-color: darkslateblue;
+    height: 50px;
+}
+div:nth-of-type(4) {
+    background-color:brown
+}
+div:nth-of-type(5) {
+   background-color:lightskyblue
+}
+
+div:nth-of-type(1) h3 {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18pt;
+    color: yellow;
+}
+
+div:nth-of-type(2) h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    color: orange
+}
+
+div:nth-of-type(3) h3 {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 16px;
+    color: rgb(73, 182, 224)
+}
+
+/* É possível selecionar QUAL OCORRÊNCIA DO ELEMENTO FILHO DENTRO DE UM DETERMINADO PAI SE QUER, USANDO NOVAMENTE A PSEUDO-CLASSE */
+
+div:nth-of-type(4) h3:nth-of-type(1) {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color:navy
+}
+
+div:nth-of-type(5) h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: orange
+}
+
+/* Para selecionar as h3 ímpares contidas nas div ímpares. */
+
+div:nth-of-type(odd) h3:nth-of-type(odd) {
+    font-style: italic;
+}
