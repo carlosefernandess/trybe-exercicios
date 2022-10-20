@@ -18,4 +18,4 @@ console.log("O resultado da adição é:" + " " + adicao);
 console.log("O resultado da substração é:" + " " + subtracao);
 console.log("O resultado da multiplicação é:" + " " + multiplicacao);
 console.log("O resultado da divisão é:" + " " + divisao);
-console.log("O resto da divisão entre " + a + " e " + b + ", ou seja, o módulo, é: " + modulo);
+console.log("O  da divisão entre " + a + " e " + b + ", ou seja, o módulo da divisão, é: " + modulo);
