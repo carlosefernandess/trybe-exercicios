@@ -4,10 +4,11 @@ let numberInsert = 56
 
 if (numberInsert > 0) {
     console.log("positive")
-}
+};
 else if (numberInsert < 0) {
     console.log("negative")
-}
+};
 else {
+    
     console.log("zero")
-}
+};
