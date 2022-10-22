@@ -1,13 +1,29 @@
-// Há um par entre nós
+//1) Há um par entre nós
 // Utilize if/else para fazer um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele deve retornar false.
 // Bonus: use somente um if.//
+ 
+// const x = 12
+// const y = 51
+// const z = 13
+// let result
+
+// if (x%2===0 || y%2===0 || z%2===0) {
+//    result = true
+// }
+// else {
+//    result = false
+// }
+// console.log (result)
+
+//2) Utilize if/else para fazer um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele deve retornar false.
+// Bonus: use somente um if.
 
 const x = 12
-const y = 51
-const z = 13
+const y = 52
+const z = 16
 let result
 
-if (x%2===0 || y%2===0 || z%2===0) {
+if (x%2!==0 || y%2!==0 || z%2!==0) {
    result = true
 }
 else {
