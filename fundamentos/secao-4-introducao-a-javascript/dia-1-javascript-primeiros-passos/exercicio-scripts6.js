@@ -6,26 +6,31 @@
 // Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
 
 // Exemplo: bishop (bispo) -> diagonals (diagonais)
-
-let pieceInput = ""
+let userInput = "QuEeN"
 let moveOutput = ""
-const outputText = pieceInput + "->" + moveOutput
 
-switch (pieceInput) {
+let outputTextError = "Error! Your input '" + userInput + "' is invalid! Verify your tiping and try again!"
+
+switch (userInput.toLocaleLowerCase()) {
     case "king":
-        moveOutput = "One square - Any direction";
+        moveOutput = "King -> One square - Any direction";
         break
     case "queen":
-        moveOutput = "Any number of squares - Diagonals, Horizontals or Verticals";
+        moveOutput = "Queen -> Any number of squares - Diagonals, Horizontals or Verticals";
         break
     case "rook":
-        moveOutput = "Any number of squares - Horizontals, Verticals";
+        moveOutput = "Rook -> Any number of squares - Horizontals, Verticals";
+        break
     case "bishop":
-        moveOutput = "Any number of squares - Diagonals";
+        moveOutput = "Bishop -> Any number of squares - Diagonals";
+        break
     case "knights":
-        moveOutput = "One move in 'L' shape - Any direction in 'L' shape - *Can jump over other pieces";
+        moveOutput = "Knights -> One move in 'L' shape - Any direction in 'L' shape - *Can jump over other pieces";
+        break
     case "pawns":
-        moveOutput = "One or Two moves if have not moved yet. If they have, One move only - Vertically forward";
-
-}
-// ##PAREI AQUI
+        moveOutput = "Pawns -> One or Two moves if have not moved yet. If they have, One move only - Vertically forward";
+        break
+        default:
+        console.log(outputTextError)
+};
+console.log(moveOutput);

@@ -2,8 +2,8 @@
 // Para os ângulos serem de um triângulo válido, a soma dos três deve ser 180 graus.
 // Um ângulo será considerado inválido se não tiver um valor positivo.
 
-const firstAngle = 101
-const secondAngle = 40
+const firstAngle = 120
+const secondAngle = 20
 const thirdAngle = 40
 let triangle = (firstAngle+secondAngle+thirdAngle);
 
