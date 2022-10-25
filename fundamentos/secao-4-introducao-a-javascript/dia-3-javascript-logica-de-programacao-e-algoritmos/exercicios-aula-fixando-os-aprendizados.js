@@ -8,3 +8,16 @@
 // };
 
 // console.log(resultado);
+
+
+
+// 7.
+// Utilizando os conceitos de Algoritmos e Lógica de Programação, calcule a soma de todos os números de 1 a 100. O resultado será:
+
+let startNumber = 1;
+let somaNumber = [];
+
+for (let index = 0; index <= 100; index+=1) {
+    somaNumber[index]
+};
+console.log(listaOrdenada);
