@@ -89,24 +89,57 @@
 // 5 - Crie um algoritmo que recebe a idade de Carolzita , Murilo e Baêta e imprime quem é a pessoa mais nova no formato:
 // "Pessoa" é a mais nova.
 
-var idadeCarolzita = 22;
-var idadeMurilo = 26;
-var idadeBaeta = 22;
-let pessoa;
+// 1º) Existe três possibilidades: 
+// -as três idades são diferentes (logo, sempre haverá uma idade menor);
+// -as três idades são iguais (logo nunca haverá nenhuma menor);
+// -há duas idades iguais e uma diferentes. Nesta opção há ainda duas possibilidades:
+// -as duas idades iguais são MENORES que a outra (logo há DUAS pessoas com a idade MENOR) --ou--
+// -as duas idades iguais são MAIORES que a outra (logo há UMA pessoa com a idade MENOR)
 
-if (idadeCarolzita<idadeMurilo && idadeCarolzita<idadeBaeta)
- { pessoa = "Carolzita"
-}
-else if (idadeMurilo<idadeCarolzita && idadeMurilo<idadeBaeta){
-    pessoa = "Murilo"
-}
-else if (idadeBaeta < idadeCarolzita && idadeBaeta < idadeMurilo) {
-    pessoa = "Baêta"
-};
+// var idadeCarolzita = 22;
+// var idadeMurilo = 26;
+// var idadeBaeta = 22;
+// let pessoaMaisNova = "";
 
-if (idadeCarolzita!=idadeMurilo||idadeCarolzita!=idadeBaeta||idadeBaeta!=idadeMurilo){
-    console.log(pessoa + " é a mais nova!")
+// if (idadeCarolzita<idadeMurilo && idadeCarolzita<idadeBaeta)
+//  { pessoa = "Carolzita"
+// }
+// else if (idadeMurilo<idadeCarolzita && idadeMurilo<idadeBaeta){
+//     pessoa = "Murilo"
+// }
+// else if (idadeBaeta < idadeCarolzita && idadeBaeta < idadeMurilo) {
+//     pessoa = "Baêta"
+// };
+
+// if (idadeCarolzita!=idadeMurilo||idadeCarolzita!=idadeBaeta||idadeBaeta!=idadeMurilo){
+//     console.log(pessoa + " é a mais nova!")
+// }
+// else {
+//     console.log("As idades são iguais!!!")
+// };
+
+// 1º) Existe três possibilidades: 
+// -as três idades são diferentes (logo, sempre haverá uma idade menor);
+// -as três idades são iguais (logo nunca haverá nenhuma menor);
+// -há duas idades iguais e uma diferentes. Nesta opção há ainda duas possibilidades:
+// -as duas idades iguais são MENORES que a outra (logo há DUAS pessoas com a idade MENOR) --ou--
+// -as duas idades iguais são MAIORES que a outra (logo há UMA pessoa com a idade MENOR)
+
+let idadeP1 = 0;
+let idadeP2 = 0;
+let idadeP3 = 0;
+
+if (idadeP1!=idadeP2 && idadeP2!=idadeP3 && idadeP3!=idadeP1) {
+    if (idadeP1<idadeP2 && idadeP1<idadeP3) {
+        idadeMenor = idadeP1
+    }
+    else if (idadeP2<idadeP1 && idadeP2<idadeP3) {
+        idadeMenor = idadeP2
+    }
+    else if (idadeP3<idadeP1 && idadeP3<idadeP2) {
+        idadeMenor = idadeP3
+    }}
+else if (idadeP1) {
+
 }
-else {
-    console.log("As idades são iguais!!!")
-};
+}
