@@ -66,13 +66,41 @@ function numberCompareThree () {
     }
     else if (num2===num3 && num2!=num1){
         return "Os números da segunda posição (" + num2 + ") e  da terceira posição (" + num3 + ") são os mesmos!"
-    }
+    };
 };
-console.log(numberCompareThree())
+// console.log(numberCompareThree())
 
 // Faça um programa que, dado um valor recebido como parâmetro, retorne “positive” se esse valor for positivo, “negative” se for negativo, e caso não seja nem positivo e nem negativo retorne “zero”.
 
+function comparePlusOrMinus(number) {
+    if (number > 0) {
+        return ("positive");
+    }
+    else if (number < 0) {
+        return ("negative");
+    }
+    else if (number = 0) {
+        return ("zero")
+    };
+};
+// console.log(comparePlusOrMinus (-2))
+
+
 // Faça um programa que receba três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false, caso contrário. Se algum ângulo for inválido, o programa deve retornar uma mensagem de erro.
+
+function compareTriangleAngles(angle1, angle2, angle3) {
+    let itsATriangle = 180;
+    if (angle1+angle2+angle3 == itsATriangle) {
+        return true;  
+    }
+    else if (angle1 < 0 || angle2 < 0 || angle3 < 0) {
+    return "Error! Invalid angle!";
+    }
+    else {
+        return false;
+    }
+}
+console.log(compareTriangleAngles(90, 1, 89))
 
 // Para os ângulos serem de um triângulo válido, a soma dos três devem ser 180 graus.
 
