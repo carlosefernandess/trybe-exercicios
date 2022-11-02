@@ -44,7 +44,7 @@ function numberCompare (){
 // console.log(numberCompare());
 
 // Faça um programa que retorne o maior de três números. Defina, no começo do programa, três constantes com os valores que serão comparados.
-const num1 = 1;
+const num1 = 3;
 const num2 = 3;
 const num3 = 3;
 
@@ -53,16 +53,21 @@ function numberCompareThree () {
         return num1;
     }
     else if (num2 > num1 && num2 > num3) {
-        return num2
+        return num2;
     }
     else if (num3 > num1 && num3 > num2){
-        return num3
+        return num3;
     }
-    else if (num1===num2 && num3===num3) {
-        return "All numbers are the same!"
+    else if (num1===num2 && num1===num3) {
+        return "Todos os três números são iguais!";
     }
-    else if 
-}
+    else if (num1===num2 && num1!=num3) {
+        return "Os números da primeira posição (" + num1 + ") e da segunda posição (" + num2 + ") são os mesmos!"
+    }
+    else if (num2===num3 && num2!=num1){
+        return "Os números da segunda posição (" + num2 + ") e  da terceira posição (" + num3 + ") são os mesmos!"
+    }
+};
 console.log(numberCompareThree())
 
 // Faça um programa que, dado um valor recebido como parâmetro, retorne “positive” se esse valor for positivo, “negative” se for negativo, e caso não seja nem positivo e nem negativo retorne “zero”.
