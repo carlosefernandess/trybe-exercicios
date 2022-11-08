@@ -31,10 +31,21 @@ function palindromeTester02 (receivedWord02) {
 
 };
 console.log(palindromeTester02(`Arara`))
+
+
 // Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
 // Array de teste: [2, 3, 6, 7, 10, 1];.
 // Valor esperado no retorno da função: 4.
 
+function whereIsHigher (trybeArrayOfNumbers) {
+    // let orderedArray = trybeArrayOfNumbers.sort(function (a,b) {return a-b})
+    // for (let key in trybeArrayOfNumbers) {
+    //     if (key === orderedArray.length-1)
+    // }
+};
+
+
+//Se o exercício pedisse O MAIOR NÚMERO, e não qual seu maior índice original...
 function whoIsHigher (arrayOfNumbers) {
 // usando .sort(FUNÇÃO), onde função é function (a,b) {return a-b}, pois sendo a menor que b, o resultado é negativo - e assim o elemento é posicionado à esquerda:
 let organizedArray = arrayOfNumbers.sort(function (a,b) {
