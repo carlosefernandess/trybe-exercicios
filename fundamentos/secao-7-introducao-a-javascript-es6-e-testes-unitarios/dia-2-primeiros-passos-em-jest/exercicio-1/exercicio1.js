@@ -9,3 +9,5 @@ function myRemove(arr, item) {
   }
   
 module.exports = myRemove;
+
+//A função faz o push no newArr de todos os elementos dados como parâmetro(arr) da função myRemove, DESDE QUE seja diferente do elemento dado como parâmetro (item); ou seja - uma cópia do array passado sem o item.
