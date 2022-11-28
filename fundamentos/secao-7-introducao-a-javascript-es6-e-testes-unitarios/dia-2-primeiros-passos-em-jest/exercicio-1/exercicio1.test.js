@@ -1,6 +1,7 @@
 const myRemove = require ("./exercicio1");
 
-describe ("Testes propostos pelo exercício1", () => { test ("Verifica se retorna o array esperado - sem o numeral 3", () =>
+describe ("Testes propostos pelo exercício1", () => { 
+    test ("Verifica se retorna o array esperado - sem o numeral 3", () =>
     { expect (myRemove([1, 2, 3, 4], 3)).toEqual([1, 2, 4]);
     });
     
