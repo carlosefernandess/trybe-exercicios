@@ -33,3 +33,6 @@ const mapString = (objectMap, string) => {
     };
     return mapString(map, string);
   }
+
+  const allFunctions = {encode, decode};
+  module.exports = allFunctions;
