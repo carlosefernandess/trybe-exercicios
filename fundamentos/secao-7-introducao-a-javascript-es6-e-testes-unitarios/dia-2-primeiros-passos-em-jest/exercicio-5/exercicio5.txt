@@ -1,0 +1,2 @@
+A função hydrate recebe uma string no formato “numero bebida”, e retorna a sugestão de quantos copos de água você deve beber para se hidratar. Para cada bebida, deve-se tomar um copo de água para não ter ressaca.
+Implemente a função hydrate a partir dos testes abaixo. É importante nunca alterar os testes ou as variáveis já escritas no código.
