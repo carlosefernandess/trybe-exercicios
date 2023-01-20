@@ -1,0 +1,47 @@
+body {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(60, 60, 60);
+}
+#divFullForm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    /* height: 80%;
+    width: 80%;
+    background-color: blue; */
+}
+#fullForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    background-color: orange;
+    border: 10px;
+    max-width: 50%;
+}
+#value{
+    background-color: darkorchid;
+}
+#title{
+    /* background-color: black; */
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+}
+#email-cpf{
+    background-color: chartreuse;
+}
+#button{
+    background-color: green;
+}
