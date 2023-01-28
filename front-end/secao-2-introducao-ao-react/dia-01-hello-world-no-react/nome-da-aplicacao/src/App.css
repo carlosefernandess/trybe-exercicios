@@ -1,0 +1,9 @@
+*, .HelloWorld {
+  background-color: rgb(50, 50, 50);
+  color: bisque;
+  text-align: center;
+  font-family: fantasy;
+  text-decoration: double;
+  text-shadow: 20px;
+  font-size: 30px;
+}
