@@ -11,7 +11,7 @@ class About extends Component {
                 <li>Comunicação</li>
                 <li>JavaScript</li>
                 <li>Jest</li>
-                <li>React</li>
+                <li>React!</li>
             </ul>
             </div>
 
